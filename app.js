@@ -15,7 +15,7 @@ const hide = function () {
 }
 
 showEmployees = function (employeeList) {
-}
+} 
 
 addEmployees = function () {
 }
