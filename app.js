@@ -16,9 +16,10 @@ addEmployees = function () {
     $('body').html(`<button><h2 id='viewbutton'>View</h2></button>`);
     $('body').append(`<button><h2 id='addbutton'>Add</h2></button>`);
     $('body').append(`<button><h2 id='verifybutton'>Verify</h2></button>`);
-    $('body').append(`<form id='nameform'>Name</form>`);
-    $('body').append(`<form id='numberform'>Office Number</form>`);
-    $('body').append(`<form id='phoneform'>Phone Number</form>`);
+    const nameInput = $('body').append(`<input type="text"  id='nameform'>Name</form>`);
+    const numberInput = $('body').append(`<input type="text"  id='numberform'>Office Number</form>`);
+    const phoneInput = $('body').append(`<input  type="text" id='phoneform'>Phone Number</form>`);
+
 }
 
 verifyEmployees = function () {
