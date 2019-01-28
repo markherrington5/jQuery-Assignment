@@ -1,28 +1,12 @@
-$('body').html(`<button><h2 id='viewbutton'>View</h2></button>`);
-$('body').append(`<button><h2 id='addbutton'>Add</h2></button>`);
-$('body').append(`<button><h2 id='verifybutton'>Verify</h2></button>`);
-
-const show = function () {
-    for (let i = 0; nodeList.length < 0; i++) {
-        nodeList[i].style.display = '';
-    }
+showViewPage = function () {
+    $("#viewPage").show();
+    $("#addPage").hide();
 }
 
-const hide = function () {
-    for (let i = 0; nodeList.length; i++) {
-        nodeList[i].style.dispay = 'none';
-    }
+showAddPage = function () {
+    $("#viewPage").hide();
+    $("#addPage").show();
 }
 
-showEmployees = function (employeeList) {
-} 
-
-addEmployees = function () {
-}
-
-verifyEmployees = function () {
-}
-
-$('#viewbutton').on('click', showEmployees);
-$('#addbutton').on('click', addEmployees);
-$('#verifybutton').on('click', verifyEmployees);
+$('#view').on('click', showViewPage);
+$('#add').on('click', showAddPage);
