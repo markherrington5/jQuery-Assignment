@@ -71,7 +71,7 @@ const $ = function (selector) {
 
   const hide = function () {
     for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.dispay = 'none';
+      nodeList[i].style.display = 'none';
     }
   }
 

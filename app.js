@@ -1,12 +1,27 @@
-showViewPage = function () {
-    $("#viewPage").show();
+$("#viewPage").hide();
+$("#addPage").hide();
+$('#verifyPage').hide();
+
+const showViewPage = function (e) {
+    e.preventDefault();
     $("#addPage").hide();
+    $('#verifyPage').hide();
+    $("#viewPage").show();
 }
 
-showAddPage = function () {
+const showAddPage = function () {
     $("#viewPage").hide();
+    $('#verifyPage').hide();
     $("#addPage").show();
 }
 
-$('#view').on('click', showViewPage);
-$('#add').on('click', showAddPage);
+const showVerifyPage = function () {
+    $("#viewPage").hide();
+    $("#addPage").hide();
+    $('#verifyPage').show()
+}
+console.log('about to assign click event listeners')
+
+$('#viewbtn').on('click', showViewPage);
+$('#addbtn').on('click', showAddPage);
+$('#verifybtn').on('click', showVerifyPage)

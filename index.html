@@ -5,21 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- my CSS -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li id="view" class="nav-item">View</li>
-      <li id="add" class="nav-item">Add</li>
-    </ul>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class=container>
+      <div class="col-sm"></div>
+    </div>
+    <div class="col-sm">
+      <button type="button" class="btn btn-light" id="viewbtn">View</button>
+      <button type="button" class="btn btn-light" id="addbtn">Add</button>
+      <button type="button" class="btn btn-light" id="verifybtn">Verify User</button>
+    </div>
+    <div class="col-sm">
+
+    </div>
+    </div>
   </nav>
 
-  <main>
-    <section id="viewPage">View</section>
-    <section id="addPage">Add</section>
-  </main>
+
+  <div class="container" id='viewPage'>
+View
+  </div>
+
+  <div class="container" id='addPage'>
+Add
+  </div>
+
+  <div class="container" id='verifyPage'>
+Verify
+  </div>
 
   <script src="dom.js"></script>
   <script src="employeeList.js"></script>
