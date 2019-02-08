@@ -1,0 +1,21 @@
+#employeeBox {
+    background: #4caf50;
+    border: black solid;
+    width: 200px;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 3px;
+    box-shadow: 1px 1px 15px grey;
+}
+
+.formBox {
+    background: #4caf50;
+    border: black solid;
+    width: 200px;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 3px;
+    box-shadow: 1px 1px 15px grey;
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
