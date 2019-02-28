@@ -11,17 +11,20 @@
   <!-- my CSS -->
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <title>Employee List</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  
   <nav class="navbar navbar-light" style="background-color: #1b5e20">
     <div class=container>
       <div class="col-sm">
-          <button type="button" class="btn btn-light" id="viewbtn">View Employees</button>
-          <button type="button" class="btn btn-light" id="addbtn">Add</button>
-          <button type="button" class="btn btn-light" id="verifybtn">Verify</button>
+        <button type="button" class="btn btn-light" id="viewbtn">View Employees</button>
+        <button type="button" class="btn btn-light" id="addbtn">Add</button>
+        <button type="button" class="btn btn-light" id="verifybtn">Verify</button>
       </div>
-      <div class="col-sm"></div>
+      <div class="col-sm addPageCol"></div>
       <div class="col-sm"></div>
     </div>
   </nav>
@@ -33,9 +36,10 @@
 
   <div class="container" id='verifyPage'></div>
 
-  <script src="dom.js"></script>
+  <!-- <script src="dom.js"></script> -->
   <script src="employeeList.js"></script>
   <script src="app.js"></script>
+
 </body>
 
 </html>
